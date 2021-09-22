@@ -1,6 +1,105 @@
-#logo {
-    background-color: #F0A83E;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "roboto", sans-serif;
+    color: #3C2313;
+    margin: 0;
+    padding: 0;
 }
-#arriba {
+
+* {
+    margin: 0px;
+}
+
+header{
+    color:whitesmoke;
+}
+.primerHeader{
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 20px;
+}
+.primerHeader ul, .primerHeader p{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0px 50px 0px; 
+}
+
+.segundoHeader{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.segundoHeader img,.segundoHeader nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+    margin: 20px 20px 20px;
+}
+
+.banner{
+    display: flex;
+    background-image: url(../imagenes/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size: cover;
+    height: 409px;
+    font-size: 30px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+div{
+    margin: 20px;
+    text-align: center;
+}
+.banner div h3{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.banner div p{
+    font-size: 20px;
+}
+
+.banner div button{
+    background-color: #F0A83E;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo img{
+    height: 100px;
+    width: 100px;
+}
+.titulo h2{
+    font-size: 50px;
+}
+.titulo nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
