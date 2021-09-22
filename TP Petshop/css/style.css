@@ -12,6 +12,7 @@ body {
     margin: 0px;
 }
 
+
 header{
     color:whitesmoke;
 }
@@ -92,9 +93,12 @@ header{
 
 .banner div button{
     background-color: #87cda5;
+    opacity: 0.9;
+    font-size: 15vw;
     padding: 10px;
+    margin-top: 8vh;
     border: none;
-    border-radius: 5px;
+    border-radius: 3vw;
     color: white;
     transition: all 200ms;
 }
@@ -139,6 +143,11 @@ header{
     flex-direction: column;
     text-align: center;
 }
+.productos article:hover{
+    border-width: 4px;
+    border-color: #F0A83E;
+    border-style: inset;
+}
 
 .contactos{
     display: flex;
@@ -175,7 +184,7 @@ header{
     margin: 3vh;
 }
 
-@media (min-width: 640px){
+@media (min-width: 660px){
 
     .segundoHeader{
         display: flex;
@@ -186,6 +195,17 @@ header{
     }
     .banner div button{
         background-color: #F0A83E;
+    }
+    .banner div button{
+        background-color: #F0A83E;
+        opacity: 1;
+        font-size: 1em;
+        padding: 10px;
+        margin-top: 0vh;
+        border: none;
+        border-radius: 1vw;
+        color: white;
+        transition: all 200ms;
     }
     .contactos form{
         width: 40vw;
