@@ -5,6 +5,7 @@ body {
     color: #3C2313;
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
 * {
@@ -18,20 +19,25 @@ header{
     background-color: #222222;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    height: 20px;
+    /* align-items: stretch; */
+    /* height: 20px; */
 }
-.primerHeader ul, .primerHeader p{
+.primerHeader p, .primerHeader ul{
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     list-style: none;
-    margin: 0px 50px 0px; 
+    /* margin: 0px 50px 0px; */ 
+    padding: 0.4vh 8vw;
+}
+.primerHeader ul{
+    gap: 2vw;
 }
 
 .segundoHeader{
     background-color: #F0A83E;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -40,9 +46,26 @@ header{
     justify-content: space-around;
     gap: 30px;
     list-style: none;
-    margin: 20px 20px 20px;
+    margin: 20px 30px;
+    padding: 0px;
 }
-
+.segundoHeader nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.segundoHeader nav ul li a:before{
+    content: " ";
+    background: #222222;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    transition: all 400ms;
+}
+.segundoHeader nav ul li a:hover::before{
+    width: 100%;
+    height: 10%;
+}
 .banner{
     display: flex;
     background-image: url(../imagenes/bowl-and-pet-daities-on-green-background\ 1.png);
@@ -50,10 +73,10 @@ header{
     height: 409px;
     font-size: 30px;
     position: relative;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-div{
+.banner div{
     margin: 20px;
     text-align: center;
 }
@@ -64,20 +87,29 @@ div{
 }
 .banner div p{
     font-size: 20px;
+    color:white;
 }
 
 .banner div button{
-    background-color: #F0A83E;
+    background-color: #87cda5;
     padding: 10px;
     border: none;
     border-radius: 5px;
     color: white;
+    transition: all 200ms;
+}
+.banner div button:hover{
+    background-color: white;
+    color: black;
 }
 
 .titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 3vh;
+    padding: 3vh 0vh;
 }
 
 .titulo img{
@@ -91,15 +123,71 @@ div{
     display: flex;
     gap: 20px;
     list-style: none;
+    padding: 0px;
 }
 
 .productos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 5vh;
+    padding: 5vh;
 }
 
 .productos article{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactos h2{
+    margin: 70px 20px 20px 20px;
+}
+.contactos form{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+.contactos form input{
+    background-color: #3C2313;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.contactos form div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.contactos form div button{
+    background-color:#F0A83E;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 3vh;
+}
+
+@media (min-width: 640px){
+
+    .segundoHeader{
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner{
+        justify-content: flex-end;
+    }
+    .banner div button{
+        background-color: #F0A83E;
+    }
+    .contactos form{
+        width: 40vw;
+    }
 }
