@@ -8,7 +8,7 @@ body {
     width: 100vw;
 }
 
-* {
+*{
     margin: 0px;
 }
 
@@ -55,7 +55,7 @@ header{
     text-decoration: none;
     color: white;
 }
-.segundoHeader nav ul li a:before{
+.segundoHeader nav ul li a::before{
     content: " ";
     background: #222222;
     position: absolute;
@@ -142,11 +142,12 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-width: 4px;
+    border-color: transparent;
+    border-style: inset;
 }
 .productos article:hover{
-    border-width: 4px;
     border-color: #F0A83E;
-    border-style: inset;
 }
 
 .contactos{
